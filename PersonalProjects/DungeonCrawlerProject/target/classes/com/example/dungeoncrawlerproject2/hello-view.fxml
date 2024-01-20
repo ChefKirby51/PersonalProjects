@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dungeoncrawlerproject2.HelloController">
+   <TextArea fx:id="textAreaInformation" layoutX="1.0" layoutY="30.0" prefHeight="410.0" prefWidth="395.0" />
+   <Button fx:id="actionButtonFight" layoutY="455.0" mnemonicParsing="false" onAction="#fightButtonClicked" prefHeight="97.0" prefWidth="99.0" text="Fight" />
+   <Button fx:id="actionButtonRun" layoutX="99.0" layoutY="455.0" mnemonicParsing="false" onAction="#runButtonClicked" prefHeight="97.0" prefWidth="99.0" text="Run Away" />
+   <Button fx:id="actionButtonSearch" layoutX="198.0" layoutY="455.0" mnemonicParsing="false" onAction="#searchButtonClicked" prefHeight="97.0" prefWidth="99.0" text="Search" />
+   <Button fx:id="actionButtonSleep" layoutX="297.0" layoutY="455.0" mnemonicParsing="false" onAction="#sleepButtonClicked" prefHeight="97.0" prefWidth="99.0" text="Sleep" />
+   <Button fx:id="movementButtonNorth" layoutX="461.0" layoutY="466.0" mnemonicParsing="false" onAction="#northButtonClicked" text="North" />
+   <Button fx:id="movementButtonEast" layoutX="513.0" layoutY="491.0" mnemonicParsing="false" onAction="#eastButtonClicked" text="East   " />
+   <Button fx:id="movementButtonWest" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="491.0" mnemonicParsing="false" onAction="#westButtonClicked" text="West  " textAlignment="CENTER" />
+   <Button fx:id="movementButtonSouth" layoutX="461.0" layoutY="513.0" mnemonicParsing="false" onAction="#southButtonClicked" text="South" />
+   <Label alignment="CENTER" layoutX="397.0" layoutY="15.0" prefHeight="17.0" prefWidth="177.0" text="Player Stats" />
+   <Label layoutX="186.0" layoutY="6.0" text="Map" />
+   <Label alignment="CENTER" layoutX="397.0" layoutY="268.0" prefHeight="17.0" prefWidth="177.0" text="NPC Stats" />
+   <Line endX="471.0" layoutX="101.0" layoutY="455.0" startX="-101.0" />
+   <Line endX="-100.0" endY="-455.0" layoutX="496.0" layoutY="455.0" startX="-100.0" />
+   <Line endX="76.0" layoutX="496.0" layoutY="259.0" startX="-100.0" />
+   <TextArea fx:id="labelPlayerStats" layoutX="403.0" layoutY="32.0" prefHeight="200.0" prefWidth="160.0" />
+   <TextArea fx:id="labelNPCStats" layoutX="403.0" layoutY="285.0" prefHeight="157.0" prefWidth="160.0" />
+</AnchorPane>
