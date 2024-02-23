@@ -16,15 +16,15 @@ public class PersonHeartRate {
     }
 
     public String getFirstName() {
-        return firstName;
+        return this.firstName;
     }
 
     public String getLastName() {
-        return lastName;
+        return this.lastName;
     }
 
     public DateOfBirth getDateOfBirth() {
-        return dateOfBirth;
+        return this.dateOfBirth;
     }
 
     public int calculateAge(){
@@ -32,6 +32,7 @@ public class PersonHeartRate {
         LocalDate birthDate = of(dateOfBirth.getYearDOB(), dateOfBirth.getMonthDOB(), dateOfBirth.getDayDOB());
         Period period = Period.between(birthDate, currentDate);
         return period.getYears();
+        //Remember to check the of method - use ctrl & left-click to see requirements
     }
     /*
     This method will calculate the user inputted age into years based of off the current date using the

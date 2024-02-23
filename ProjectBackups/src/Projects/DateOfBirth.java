@@ -1,5 +1,4 @@
 package Projects;
-
 public class DateOfBirth {
     private int dayDOB;
     private int monthDOB;
@@ -13,15 +12,15 @@ public class DateOfBirth {
     }
 
     public int getDayDOB() {
-        return dayDOB;
+        return this.dayDOB;
     }
 
     public int getMonthDOB() {
-        return monthDOB;
+        return this.monthDOB;
     }
 
     public int getYearDOB() {
-        return yearDOB;
+        return this.yearDOB;
     }
 
     public void setDayDOB(int dayDOB) {
